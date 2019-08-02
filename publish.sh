@@ -11,6 +11,12 @@ sed -e "s,/ipns/Qm[^/]*,http://$bafy.ipfs.dweb.link/gw-assets,g" dir-index-uncat
 sed -e "s,/ipns/Qm[^/]*,/ipfs/$qm/gw-assets,g" dir-index-uncat.html > dir-index-ipfs.html
 url=http://127.0.0.1:8080/ipfs/$(ipfs add -Q -n dir-index-ipfs.html)
 echo firefox $url
+git add README.md dir-index.html dir-index-*.html gw-assets index.go knownIcons.txt LICENSE revs.log
+if git commit -m "publishing on $tic"; then
+gitid=$(git rev-parse HEAD)
+echo gitid: $gitid
+echo $tic: $gitid >> revs.log
+fi
 # ----------------------------------------------------------------------------------------------------------------
 qm=$(ipfs add -Q -w -r README.md gw-assets dir-index.html dir-index-*.html index.go knownIcons.txt LICENSE)
 tag=$(git describe --abbrev=0 --tags)

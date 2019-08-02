@@ -7,9 +7,17 @@
 
 > Directory listing HTML for go-ipfs gateways
 
-This repo is not be used standalone. It's used by the gateway code in go-ipfs. It'll be merged into the gateway package, once the gateway has been extracted from go-ipfs.
+This repo is not be used standalone. It's used by the gateway code in go-ipfs.
+There is a ipns key: [/ipns/QmPNQeX9HXRVvSMCm6uXsjxZcGzHDhdSy9J2aKAo7R4U6k][1] to change the [assets][2] (layout and branding)
+without recompiling ipfs. Revisions are listed [here][3]
 
-![](http://gateway.ipfs.io/ipfs/Qmf82jUC9ZuoSTCNY55hyx3HmiDed3WnhFD5PC7CTSPmC2/cap.png)
+
+
+It'll be merged into the gateway package, once the gateway has been extracted from go-ipfs.
+
+![](https://cdn.statically.io/img/gateway.ipfs.io/ipfs/QmdwkG9L9DDYAUUJ99X5Mwy3EVBJ4inBRz1qXsBqXGShHe)
+<!-- https://cdn.statically.io/img/gateway.ipfs.io/ipns/QmPNQeX9HXRVvSMCm6uXsjxZcGzHDhdSy9J2aKAo7R4U6k/logo.png -->
+
 
 ## Contribute
 
@@ -19,8 +27,14 @@ This repository falls under the IPFS [Code of Conduct](https://github.com/ipfs/c
 
 ### Want to hack on IPFS?
 
-[![](https://cdn.rawgit.com/jbenet/contribute-ipfs-gif/master/img/contribute.gif)](https://github.com/ipfs/community/blob/master/contributing.md)
+[![](https://cdn.statically.io/img/gateway.ipfs.io/ipfs/QmVbqEVS1s17mrvS2qv6mYLcArEds4vBiTXcYPXGb516Sy/contribute.png)](https://github.com/ipfs/community/blob/master/contributing.md)
 
 ## License
 
 MIT
+
+![](https://cdn.statically.io/picsum/800/600)
+
+[1]: https://cloudflare-ipfs.com/ipns/QmPNQeX9HXRVvSMCm6uXsjxZcGzHDhdSy9J2aKAo7R4U6k
+[2]: https://cdn.jsdelivr.net/gh/iglake/dir-index-html@latest/gw-assets/
+[3]: https://cdn.jsdelivr.net/gh/iglake/dir-index-html@latest/revs.log
